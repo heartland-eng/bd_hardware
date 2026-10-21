@@ -1,0 +1,14 @@
+{
+  "chart": "thread_forming",
+  "units": "metric",
+  "source": "ejot-style",
+  "columns": ["pilot_soft", "pilot_hard", "boss_od"],
+  "sizes": {
+    "M2-0.4":    {"pilot_soft": 1.7, "pilot_hard": 1.8, "boss_od": 4.0},
+    "M2.5-0.45": {"pilot_soft": 2.1, "pilot_hard": 2.2, "boss_od": 4.5},
+    "M3-0.5":    {"pilot_soft": 2.5, "pilot_hard": 2.6, "boss_od": 5.0},
+    "M4-0.7":    {"pilot_soft": 3.3, "pilot_hard": 3.4, "boss_od": 6.5},
+    "M5-0.8":    {"pilot_soft": 4.2, "pilot_hard": 4.3, "boss_od": 8.0},
+    "M6-1":      {"pilot_soft": 5.0, "pilot_hard": 5.1, "boss_od": 9.5}
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "chart": "nuts",
+  "units": "metric",
+  "source": "iso4032/din562",
+  "columns": ["af", "height", "type"],
+  "sizes": {
+    "M2-0.4":    {"af": 4.0, "height": 1.6, "type": "hexagon"},
+    "M2.5-0.45": {"af": 5.0, "height": 2.0, "type": "hexagon"},
+    "M3-0.5":    {"af": 5.5, "height": 2.4, "type": "hexagon"},
+    "M4-0.7":    {"af": 7.0, "height": 3.2, "type": "hexagon"},
+    "M5-0.8":    {"af": 8.0, "height": 4.0, "type": "hexagon"},
+    "M6-1":      {"af": 10.0, "height": 5.0, "type": "hexagon"},
+    "M8-1.25":   {"af": 13.0, "height": 6.5, "type": "hexagon"},
+    "#4-40":     {"af": 6.4, "height": 2.4, "type": "hexagon"},
+    "#6-32":     {"af": 7.9, "height": 2.8, "type": "hexagon"},
+    "#8-32":     {"af": 8.7, "height": 3.2, "type": "hexagon"},
+    "#10-24":    {"af": 9.5, "height": 3.6, "type": "hexagon"},
+    "1/4-20":    {"af": 11.1, "height": 5.6, "type": "hexagon"}
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "chart": "fastener_clearance",
+  "units": "metric",
+  "source": "iso273/iso4762/iso10642/asme-b18.2.8",
+  "columns": ["close", "normal", "loose", "cbore", "csink"],
+  "sizes": {
+    "M2-0.4":    {"close": 2.2, "normal": 2.4, "loose": 2.6, "cbore": 4.4, "csink": 4.4},
+    "M2.5-0.45": {"close": 2.7, "normal": 2.9, "loose": 3.1, "cbore": 5.4, "csink": 5.5},
+    "M3-0.5":    {"close": 3.2, "normal": 3.4, "loose": 3.6, "cbore": 6.5, "csink": 6.3},
+    "M4-0.7":    {"close": 4.3, "normal": 4.5, "loose": 4.8, "cbore": 8.0, "csink": 8.4},
+    "M5-0.8":    {"close": 5.3, "normal": 5.5, "loose": 5.8, "cbore": 10.0, "csink": 10.4},
+    "M6-1":      {"close": 6.4, "normal": 6.6, "loose": 7.0, "cbore": 11.0, "csink": 12.6},
+    "M8-1.25":   {"close": 8.4, "normal": 9.0, "loose": 10.0, "cbore": 15.0, "csink": 17.3},
+    "#2-56":     {"close": 2.4, "normal": 2.6, "loose": 2.8, "cbore": 4.0, "csink": 4.4},
+    "#4-40":     {"close": 3.1, "normal": 3.3, "loose": 3.5, "cbore": 5.2, "csink": 5.6},
+    "#6-32":     {"close": 3.7, "normal": 3.9, "loose": 4.1, "cbore": 6.3, "csink": 6.9},
+    "#8-32":     {"close": 4.4, "normal": 4.6, "loose": 4.8, "cbore": 7.5, "csink": 8.4},
+    "#10-24":    {"close": 5.1, "normal": 5.3, "loose": 5.6, "cbore": 8.7, "csink": 9.5},
+    "1/4-20":    {"close": 6.6, "normal": 6.9, "loose": 7.2, "cbore": 10.8, "csink": 12.7}
+  }
+}
