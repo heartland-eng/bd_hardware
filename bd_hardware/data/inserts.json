@@ -1,0 +1,15 @@
+{
+  "chart": "inserts",
+  "units": "metric",
+  "source": "cnc-kitchen/ruthex",
+  "columns": ["od", "length", "pilot"],
+  "sizes": {
+    "M2-0.4":    {"od": 3.6, "length": 3.0, "pilot": 2.8},
+    "M2.5-0.45": {"od": 3.9, "length": 3.6, "pilot": 3.0},
+    "M3-0.5":    {"od": 4.6, "length": 5.7, "pilot": 4.0},
+    "M4-0.7":    {"od": 5.6, "length": 6.3, "pilot": 4.8},
+    "M5-0.8":    {"od": 6.6, "length": 7.1, "pilot": 5.6},
+    "M6-1":      {"od": 8.0, "length": 8.0, "pilot": 6.0},
+    "M8-1.25":   {"od": 9.5, "length": 10.0, "pilot": 7.0}
+  }
+}
