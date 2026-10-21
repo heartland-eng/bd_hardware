@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "bd_hardware"
+version = "0.1.0"
+description = "Function-first hardware feature library for build123d (holes, pockets, bosses, snap fits)"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Heartland Engineering" }]
+keywords = ["build123d", "cad", "hardware", "fasteners", "inserts", "bearings", "snap-fit", "3d-printing"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "License :: OSI Approved :: MIT License",
+    "Topic :: Scientific/Engineering",
+]
+# build123d is a hard dependency: snap_fit, bearings, and nuts import it at
+# module level (geometry has landed). Floor >=0.10; validated on 0.13.0.
+dependencies = ["build123d>=0.10"]
+
+[project.optional-dependencies]
+dev = ["pytest>=7.0"]
+
+[tool.setuptools.packages.find]
+include = ["bd_hardware*"]
+
+[tool.setuptools.package-data]
+bd_hardware = ["data/*.json"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"

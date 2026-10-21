@@ -1,0 +1,20 @@
+{
+  "chart": "bearings",
+  "units": "metric",
+  "source": "iso15/skf",
+  "columns": ["bore", "od", "width"],
+  "sizes": {
+    "608":  {"bore": 8.0, "od": 22.0, "width": 7.0},
+    "623":  {"bore": 3.0, "od": 10.0, "width": 4.0},
+    "624":  {"bore": 4.0, "od": 13.0, "width": 5.0},
+    "625":  {"bore": 5.0, "od": 16.0, "width": 5.0},
+    "626":  {"bore": 6.0, "od": 19.0, "width": 6.0},
+    "627":  {"bore": 7.0, "od": 22.0, "width": 7.0},
+    "686":  {"bore": 6.0, "od": 13.0, "width": 5.0},
+    "688":  {"bore": 8.0, "od": 16.0, "width": 5.0},
+    "695":  {"bore": 5.0, "od": 13.0, "width": 4.0},
+    "6900": {"bore": 10.0, "od": 22.0, "width": 6.0},
+    "6901": {"bore": 12.0, "od": 24.0, "width": 6.0},
+    "6902": {"bore": 15.0, "od": 28.0, "width": 7.0}
+  }
+}
