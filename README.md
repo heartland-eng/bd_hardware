@@ -58,9 +58,10 @@ Implemented modules (geometry lands via `build123d`):
 - `snap_fit.py` — cantilever + annular snap fits
 - `bearings.py` — press-fit bearing pockets
 - `nuts.py` — nut traps + thread-forming bosses
+- `fastener.py` — screw clearance holes + counterbore / countersink
 
-Still stubbed (geometry not yet implemented): `fastener.py` (screw clearance /
-counterbore / countersink) and `inserts.py` (heat-set insert pockets).
+Still stubbed (geometry not yet implemented): `inserts.py` (heat-set insert
+pockets).
 
 The size charts are **nominal starter data** derived from public standard
 references (ISO 273 / ISO 4762 / ISO 10642, ISO 4032 / DIN 562, ISO 15 / SKF,
