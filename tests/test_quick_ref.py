@@ -2,8 +2,8 @@
 
 import bd_hardware as bdh
 
-_MODULES = (bdh.fastener, bdh.inserts, bdh.nuts, bdh.snap_fit, bdh.bearings)
-_NAMES = ("fastener", "inserts", "nuts", "snap_fit", "bearings")
+_MODULES = (bdh.fastener, bdh.inserts, bdh.nuts, bdh.snap_fit, bdh.bearings, bdh.bosses)
+_NAMES = ("fastener", "inserts", "nuts", "snap_fit", "bearings", "bosses")
 
 
 def test_module_quick_ref_shape():

@@ -2,8 +2,9 @@
 
 A lightweight, function-first hardware **feature** library for
 [build123d](https://build123d.readthedocs.io/): screw clearance holes, heat-set
-insert pockets, nut traps, thread-forming bosses, snap fits, and press-fit
-bearing pockets — keyed to standard metric and imperial sizes.
+insert pockets, nut traps, thread-forming bosses, self-tapping screw bosses,
+snap fits, and press-fit bearing pockets — keyed to standard metric and
+imperial sizes.
 
 ```python
 import bd_hardware as bdh
@@ -20,7 +21,7 @@ discovery surface. No class hierarchy, no CSV internals, no `eval()` parsing.
 
 ```
 bd_hardware/
-  __init__.py     # re-exports the 5 modules + package-level quick_ref dispatcher
+  __init__.py     # re-exports the 6 modules + package-level quick_ref dispatcher
   _sizes.py       # shared size model: Size, SizeChart, parse()  (shared)
   _quick_ref.py   # shared quick_ref formatter + dispatch       (shared)
   fastener.py     # screw clearance / counterbore / countersink holes
@@ -28,6 +29,7 @@ bd_hardware/
   nuts.py         # nut traps + thread-forming bosses
   snap_fit.py     # cantilever + annular snap fits
   bearings.py     # press-fit bearing pockets
+  bosses.py       # self-tapping screw bosses
   data/           # JSON size charts (mm), one per chart, schema-validated
 ```
 
@@ -59,6 +61,7 @@ Implemented modules (geometry lands via `build123d`):
 - `bearings.py` — press-fit bearing pockets
 - `nuts.py` — nut traps + thread-forming bosses
 - `fastener.py` — screw clearance holes + counterbore / countersink
+- `bosses.py` — self-tapping screw bosses (positive posts with pilot holes)
 
 Still stubbed (geometry not yet implemented): `inserts.py` (heat-set insert
 pockets).

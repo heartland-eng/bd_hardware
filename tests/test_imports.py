@@ -10,7 +10,7 @@ def test_package_imports():
 
 
 def test_each_module_imports():
-    for name in ("fastener", "inserts", "nuts", "snap_fit", "bearings"):
+    for name in ("fastener", "inserts", "nuts", "snap_fit", "bearings", "bosses"):
         mod = importlib.import_module(f"bd_hardware.{name}")
         assert callable(getattr(mod, "quick_ref"))
 
@@ -18,5 +18,5 @@ def test_each_module_imports():
 def test_package_reexports_modules():
     import bd_hardware as bdh
 
-    for name in ("fastener", "inserts", "nuts", "snap_fit", "bearings"):
+    for name in ("fastener", "inserts", "nuts", "snap_fit", "bearings", "bosses"):
         assert hasattr(bdh, name)

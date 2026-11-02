@@ -2,23 +2,24 @@
 
 Import as ``import bd_hardware as bdh``.
 
-Five feature modules (one import, one function call per feature):
+Six feature modules (one import, one function call per feature):
 
     fastener    -- screw clearance / counterbore / countersink holes
     inserts     -- heat-set insert pockets
     nuts        -- nut traps + thread-forming bosses
     snap_fit    -- cantilever + annular snap fits
     bearings    -- press-fit bearing pockets
+    bosses      -- self-tapping screw bosses
 
 Plus a package-level :func:`quick_ref` dispatcher for discovery.
 
-This file is the package surface: it re-exports the five feature modules and
+This file is the package surface: it re-exports the six feature modules and
 the shared size model.
 """
 
 from __future__ import annotations
 
-from . import bearings, fastener, inserts, nuts, snap_fit
+from . import bearings, bosses, fastener, inserts, nuts, snap_fit
 from ._quick_ref import dispatch as _dispatch
 from ._sizes import (
     BEARING_INTERFERENCE,
@@ -44,6 +45,7 @@ _MODULES = {
     "nuts": nuts.quick_ref,
     "snap_fit": snap_fit.quick_ref,
     "bearings": bearings.quick_ref,
+    "bosses": bosses.quick_ref,
 }
 
 
@@ -58,6 +60,7 @@ def quick_ref(module: str | None = None) -> str:
 
 __all__ = [
     "bearings",
+    "bosses",
     "fastener",
     "inserts",
     "nuts",
