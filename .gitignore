@@ -1,0 +1,19 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+.venv/
+venv/
+
+# Generated CAD artifacts
+*.stl
+*.step
+*.step.gz
+
+# Test / tooling
+.pytest_cache/
+.coverage
+htmlcov/
