@@ -1,0 +1,28 @@
+# Byte-compiled / optimized files
+__pycache__/
+*.py[cod]
+
+# Build / packaging
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Virtual environments
+.venv/
+venv/
+
+# Test / tool caches
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Generated artifacts
+*.stl
+*.step
+*.stp
+out/
+
+# Editor
+.idea/
+.vscode/
