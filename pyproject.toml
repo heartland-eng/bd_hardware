@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "bd-hardware"
+version = "0.1.0"
+description = "Function-first hardware feature library for build123d — clearance holes, insert pockets, nut traps, bosses, snap fits, bearing pockets"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Heartland Engineering" }]
+keywords = ["build123d", "cad", "hardware", "parametric", "fasteners"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Topic :: Scientific/Engineering",
+]
+dependencies = ["build123d>=0.8"]
+
+[project.optional-dependencies]
+test = ["pytest>=7", "trimesh>=4", "numpy>=1.24"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
